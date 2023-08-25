@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<title>Design de Interiores</title>
+
+	<style>		
+		html,body {
+			box-sizing: border-box;
+			width: 100%; height: 100%;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Oswald', sans-serif;
+			font-style: italic;
+			font-weight: 700;
+		}
+
+		.title > h1 {
+			margin: auto auto;
+			font-size: 3rem;
+			color: white;
+		}
+
+		.container {
+			height: 100%;
+			background-color: #1f1f1f;
+		}
+
+		.layout {
+			display: grid;
+			grid-template-rows: auto auto;
+			grid-template-columns: auto;
+			justify-content: center;
+			align-items: flex-initial;
+			height: 100%;
+		}
+
+		.logotipo {
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 5px;
+			align-items: initial;
+			margin: auto auto;
+		}
+
+		.bloco-m,
+		.bloco-o,
+		.bloco-oo,
+		.bloco-n {
+			padding: 4rem;
+			background-color: #1f1f1f;
+			text-transform: capitalize;
+			font-size: 3rem;
+			color: white;
+			margin: auto auto;
+		}
+
+		.bloco-m,
+		.bloco-n {
+			background-color: #11f2ee;
+		}
+
+		.bloco-o,
+		.bloco-oo {
+			background-color: orange;
+			color: white;
+		}
+
+		.bloco-m {
+			grid-area: 1 / 1
+		}
+
+		.bloco-o {
+			grid-area: 2 / 1
+		}
+
+		.bloco-oo {
+			grid-area: 1 / 2
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="layout">
+			<div class="logotipo">
+				<div class="bloco-m">M</div>
+				<div class="bloco-o">O</div>
+				<div class="bloco-oo">O</div>
+				<div class="bloco-n">N</div>
+			</div>
+			<div class="title">
+				<h1>Design de Interiores</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
